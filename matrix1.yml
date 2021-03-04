@@ -1,0 +1,5 @@
+phases:
+  build:
+    commands:
+      - echo 'Running matrix1 build'
+      - echo "MY_VAR = $MY_VAR" 
