@@ -1,0 +1,22 @@
+batch:
+  build-matrix:
+    static:
+      ignore-failure: false
+      env:
+        type: LINUX_CONTAINER
+        privileged-mode: true
+    dynamic:
+      env:
+        image:
+          - aws/codebuild/amazonlinux2-x86_64-standard:3.0
+          - aws/codebuild/windows-base:2019-1.0
+        variables:
+          MY_VAR:
+            - VALUE1
+            - VALUE2
+            - VALUE3
+phases:
+  build:
+    commands:
+      - echo 'Running default build'
+      - echo "MY_VAR = $MY_VAR" 
