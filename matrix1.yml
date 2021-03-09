@@ -4,4 +4,8 @@ phases:
   build:
     commands:
       - echo 'Running matrix1 build'
+      - printenv
       - echo "MY_VAR = $MY_VAR" 
+env:
+  variables:
+    MATRIX1_VAR=MATRIX1
