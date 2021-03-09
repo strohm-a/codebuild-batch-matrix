@@ -8,4 +8,4 @@ phases:
       - echo "MY_VAR = $MY_VAR" 
 env:
   variables:
-    MATRIX2_VAR=MATRIX2
+    MATRIX2_VAR: "MATRIX2"
