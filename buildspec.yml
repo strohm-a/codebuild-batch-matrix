@@ -6,15 +6,13 @@ batch:
       ignore-failure: false
       env:
         type: LINUX_CONTAINER
+        image: aws/codebuild/amazonlinux2-x86_64-standard:3.0
         privileged-mode: true
     dynamic:
       buildspec: 
         - matrix1.yml
         - matrix2.yml
       env:
-        image:
-          - aws/codebuild/amazonlinux2-x86_64-standard:3.0
-          - aws/codebuild/standard:3.0
         variables:
           MY_VAR:
             - VALUE1
