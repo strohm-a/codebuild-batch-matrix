@@ -1,10 +1,10 @@
 version: 0.2
 
 batch:
-  fast-fail: false
+  fast-fail: true
   build-matrix:
     static:
-      ignore-failure: true
+      ignore-failure: false
       env:
         type: LINUX_CONTAINER
         image: aws/codebuild/amazonlinux2-x86_64-standard:3.0
