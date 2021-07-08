@@ -5,6 +5,7 @@ phases:
     commands:
       - printenv
       - echo 'Running matrix1 build'
+      - echo "GLOBAL_VAR = $GLOBAL_VAR" 
       - echo "STATIC_VAR = $STATIC_VAR" 
       - echo "MY_VAR = $MY_VAR" 
 env:

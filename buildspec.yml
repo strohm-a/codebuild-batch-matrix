@@ -19,3 +19,7 @@ batch:
             - VALUE1
             - VALUE2
             - VALUE3
+
+env:
+  variables:
+    GLOBAL_VAR: 'This is the global variable'
