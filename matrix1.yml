@@ -4,9 +4,8 @@ phases:
   build:
     commands:
       - echo 'Running matrix1 build'
+      - echo "STATIC_VAR = $STATIC_VAR" 
       - echo "MY_VAR = $MY_VAR" 
-      - echo Failing build
-      - exit 1
 env:
   variables:
     MATRIX1_VAR: "MATRIX1"

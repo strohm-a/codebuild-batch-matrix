@@ -4,7 +4,7 @@ phases:
   build:
     commands:
       - echo 'Running matrix2 build'
-      - printenv
+      - echo "STATIC_VAR = $STATIC_VAR" 
       - echo "MY_VAR = $MY_VAR" 
 env:
   variables:
