@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo printenv
+      - printenv
       - echo 'Running matrix1 build'
       - echo "STATIC_VAR = $STATIC_VAR" 
       - echo "MY_VAR = $MY_VAR" 
