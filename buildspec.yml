@@ -7,7 +7,7 @@ batch:
       ignore-failure: false
       env:
         variables:
-          - STATIC_VAR: 'This is the static variable'
+          STATIC_VAR: 'This is the static variable'
 
     dynamic:
       buildspec: 
