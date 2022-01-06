@@ -7,7 +7,7 @@ phases:
       - echo 'Running matrix2 build'
       - echo "GLOBAL_VAR = $GLOBAL_VAR" 
       - echo "STATIC_VAR = $STATIC_VAR" 
-      - echo "MY_VAR = $MY_VAR" 
+      - echo "MATRIX2_VAR = $MATRIX2_VAR" 
 env:
   variables:
     MATRIX2_VAR: "MATRIX2"
