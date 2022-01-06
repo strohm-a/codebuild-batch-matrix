@@ -3,11 +3,11 @@ version: 0.2
 phases:
   build:
     commands:
-      - printenv
       - echo 'Running matrix1 build'
-      - echo "GLOBAL_VAR = $GLOBAL_VAR" 
-      - echo "STATIC_VAR = $STATIC_VAR" 
+      - echo "GLOBAL_VAR = $GLOBAL_VAR" # Variables defined in the main buildspec are not currently supported.
+      - echo "STATIC_VAR = $STATIC_VAR" # Variables defined in the static portion of the main buildspec are not currently supported.
       - echo "MATRIX1_VAR = $MATRIX1_VAR" 
+      - printenv
 env:
   variables:
     MATRIX1_VAR: "MATRIX1"
